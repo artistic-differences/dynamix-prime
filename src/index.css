@@ -1,0 +1,72 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--surface-ground);
+    font-family: var(--font-family);
+    font-weight: normal;
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: .5em;
+    margin-bottom: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1.5rem 0 1rem 0;
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.2;
+    color: inherit;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+p {
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: rgba(165, 165, 165, 0.1)
+    }
+    50% {
+        background-color: rgba(165, 165, 165, 0.3)
+    }
+    100% {
+        background-color: rgba(165, 165, 165, 0.1)
+    }
+}
+
+.flex-grid {
+    display: flex;
+    flex-direction: row;
+}
+.col {
+    flex: 1;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .flex-grid {
+        flex-direction: column;
+    }
+}
+
+input  {
+    width: 100%;
+}
+div.p-inputwrapper {
+    width: 100%;
+}
+label>h6 {
+    margin: 0;
+    margin-bottom: 3px;
+}
