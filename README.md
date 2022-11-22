@@ -40,3 +40,4 @@ npm run test:unit
 npm run lint
 ```
 # dynamix-prime
+# dynamix
